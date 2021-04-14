@@ -1,0 +1,2 @@
+OpenFisca-Survey-Manager==0.41.3
+notebook==6.3.0
