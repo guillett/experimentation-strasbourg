@@ -6,29 +6,24 @@
       parent1: {}
       enf1:
         strasbourg_metropole_nombre_repas_cantine: 15
-    familles:
-      famille1:
-        parents: [parent1]
-        enfants: [enf1]
-        strasbourg_metropole_quotient_familial: 409
-  output:
-    strasbourg_metropole_tarification_cantine: [1.5]
-    strasbourg_metropole_cout_cantine: [22.5]
-
-- period: 2021-03
-  input:
-    individus:
-      parent1: {}
-      enf1:
+      parent2: {}
+      enf2:
         strasbourg_metropole_nombre_repas_cantine_vegetarien: 15
     familles:
       famille1:
         parents: [parent1]
         enfants: [enf1]
         strasbourg_metropole_quotient_familial: 409
+      famille2:
+        parents: [parent2]
+        enfants: [enf2]
+        strasbourg_metropole_quotient_familial: 409
   output:
-    strasbourg_metropole_tarification_cantine_vegetarien: [1.15]
-    strasbourg_metropole_cout_cantine_repas_vegetarien: [17.25]
+    strasbourg_metropole_tarification_cantine: [1.5, 1.5]
+    strasbourg_metropole_tarification_cantine_vegetarien: [1.15, 1.15]
+    strasbourg_metropole_cout_cantine: [22.5, 0]
+    strasbourg_metropole_cout_cantine_repas_vegetarien: [0, 17.25]
+
 
 # représentation des 3 individus : 
 # représentation individu 232716 (ligne 179) : enfant inscrit dans une cantine pour un menu halal 
