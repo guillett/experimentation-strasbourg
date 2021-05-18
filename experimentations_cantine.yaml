@@ -27,7 +27,7 @@
 
 # représentation des 3 individus : 
 # représentation individu 232716 (ligne 179) : enfant inscrit dans une cantine pour un menu halal 
-# représentation individu 164346 (ligne 178) : enfant inscrit dans 2 cantines pour 2 fois un menu halal QF = 412 
+# représentation individu 164346 (ligne 178) : enfant inscrit dans 2 cantines pour 2 fois un menu halal QF = 412 et 520 
 # représentation individu 135306 (ligne 170) : enfant inscrit dans 2 cantines pour 1 fois un menu halal et 1 un menu végétarien QF = 293
 # 1,50€ pour repas standard (halal) et 1,15€ pour repas végétarien
 
@@ -41,6 +41,12 @@
       enf2:
         strasbourg_metropole_nombre_repas_cantine: 100 # repas standard 
         strasbourg_metropole_nombre_repas_cantine_vegetarien: 50 # repas végé
+      parent3: {}
+      enf_178_QF412:
+        strasbourg_metropole_nombre_repas_cantine: 150 # repas standard 
+      parent4: {}
+      enf_178_QF520:
+        strasbourg_metropole_nombre_repas_cantine: 50 # repas standard 
     familles:
       famille1:
         parents: [parent1]
@@ -50,11 +56,16 @@
         parents: [parent2]
         enfants: [enf2]
         strasbourg_metropole_quotient_familial: 293
+      famille3:
+        parents: [parent3]
+        enfants: [enf_178_QF412]
+        strasbourg_metropole_quotient_familial: 412
+      famille4:
+        parents: [parent4]
+        enfants: [enf_178_QF520]
+        strasbourg_metropole_quotient_familial: 520
   output:
-    strasbourg_metropole_tarification_cantine: [2.70]
-    strasbourg_metropole_tarification_cantine: [1.50]
-    strasbourg_metropole_tarification_cantine_vegetarien: [1.15]
-    strasbourg_metropole_cout_cantine: [405]
-    strasbourg_metropole_cout_cantine: [150]
-    strasbourg_metropole_cout_cantine_repas_vegetarien: [57.5]
-
+    strasbourg_metropole_tarification_cantine: [2.70, 1.50, 2.15, 2.70] 
+    strasbourg_metropole_tarification_cantine_vegetarien: [2.35, 1.15, 1.80, 2.35]
+    strasbourg_metropole_cout_cantine: [405, 150, 322.5, 135]
+    strasbourg_metropole_cout_cantine_repas_vegetarien: [0, 57.5, 0, 0]
