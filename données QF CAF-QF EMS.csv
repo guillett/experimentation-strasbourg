@@ -1,0 +1,17 @@
+Id Personne;Id Famille;QF CAF;QF EMS;Type repas;Nombre
+1;1;426;0;Repas Standard;20
+2;2;689;326;Repas Vgtarien;20
+3;3;300;0;Repas Standard;20
+4;4;347;0;Repas Standard;20
+5;5;445;140;Repas Standard;20
+6;6;485;0;Repas Standard;20
+7;7;121;0;Repas Standard;20
+8;8;388;176;Repas Standard;20
+9;9;496;596;Repas Standard;20
+10;10;332;0;Repas Vgtarien;20
+11;11;653;449;Repas Standard;20
+12;12;488;0;Repas Standard;20
+13;13;537;254;Repas Standard;20
+14;14;326;225;Repas Standard;20
+15;15;419;0;Repas Panier;20
+16;16;230;475;Repas Standard;20

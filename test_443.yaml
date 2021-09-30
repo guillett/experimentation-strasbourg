@@ -1,0 +1,9 @@
+period: 2021-03
+input: 
+  strasbourg_metropole_quotient_familial: 1030 
+  strasbourg_metropole_nombre_repas_cantine: 55
+output:
+  strasbourg_metropole_tarification_cantine: 5.10
+  strasbourg_metropole_cout_cantine: 280.5
+  
+ 
